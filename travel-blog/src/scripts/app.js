@@ -37,3 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const menuButton = document.querySelector(".menu-button");
+    const menuLinks = document.querySelector(".menu-links");
+
+    menuButton.addEventListener("click", () => {
+        menuLinks.classList.toggle("show"); // Toggle the "show" class
+    });
+});

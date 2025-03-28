@@ -179,3 +179,40 @@ nav table th {
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove inline spacing */
 }
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.menu-links {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.menu-links a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.menu-links a:hover {
+    text-decoration: underline;
+}
+
+.menu-links.show {
+    display: block; /* Show the menu when the class is added */
+}
